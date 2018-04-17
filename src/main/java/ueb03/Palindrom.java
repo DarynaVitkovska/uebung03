@@ -1,6 +1,6 @@
 package ueb03;
 
-public class Palindrom {
+public class Palindrom<T> {
 	static boolean istPalindrom(String s) {
 		if (s.length() == 1)
 			return true;
@@ -19,7 +19,7 @@ public class Palindrom {
 
 		// die zweite Haelfte muss nun so vom Stack kommen!
 		for (; i < cs.length; i++)
-			if (stack.pop() != cs[i])
+			if ((Character)stack.pop() != cs[i])
 				return false;
 
 		return true;

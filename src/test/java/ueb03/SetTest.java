@@ -6,10 +6,10 @@ import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SetTest {
+class SetTest{
 	@Test
 	void testStringSet() {
-		Set impl = new SetImpl();
+		Set <String>impl = new SetImpl<>();
 		String str = "In Ulm und um Ulm und um Ulm herum";
 
 		for (String c : str.split(" ")) {
